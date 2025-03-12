@@ -14,38 +14,113 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="bg-[#F4F7FF] max-w-full h-screen pt-6">
+    <!-- header start -->
     <header class="max-w-screen-2xl mx-auto bg-white rounded-2xl">
+      <!-- nav start -->
       <nav class="flex justify-between p-6">
+        <!-- logo start  -->
         <div class="flex items-center gap-3">
           <img src="assets/logo.png" alt="" />
           <h1 class="poppins-light text-4xl">
             Dev<span class="poppins-bold">Board</span>
           </h1>
         </div>
+        <!-- logo end -->
+
+        <!-- check box and color pattern start -->
         <div class="flex gap-9">
+          <!-- check box start  -->
           <div
             class="flex items-center gap-3 border-none rounded-3xl p-3 bg-[#F4F7FF]"
           >
             <img src="assets/checkbox.png" alt="" />
             <p class="poppins-bold text-3xl">23</p>
           </div>
+          <!-- check box end -->
+          <!-- color pattern stat -->
           <div
             class="flex items-center border-none p-3 rounded-full bg-[#F4F7FF]"
           >
             <img src="assets/theme-btn.png" alt="" />
           </div>
+          <!-- color pattern end -->
         </div>
+        <!-- check box and color pattern end -->
       </nav>
+      <!-- nav end -->
     </header>
+    <!-- header end -->
+    <!-- main part start  -->
     <main>
+      <!-- main content start  -->
       <section class="flex gap-6 max-w-screen-2xl mx-auto mt-5">
+        <!-- dashboard container start  -->
         <section class="w-9/12">
-          <div class="bg-white h-60 rounded-2xl"></div>
+          <!-- dashboard start  -->
+          <div class="bg-white rounded-2xl">
+            <!-- task assign container part start  -->
+            <div class="p-6 grid grid-cols-4 gap-6">
+              <!-- task assign start  -->
+              <div
+                class="flex items-center col-span-1 gap-5 p-8 bg-[#F4F7FF] rounded-xl"
+              >
+                <div class="border-none rounded-full p-5 bg-white">
+                  <img src="assets/checkbox.png" alt="" />
+                </div>
+
+                <div>
+                  <p class="poppins-medium text-sm">Task Assigned</p>
+                  <p class="poppins-bold text-3xl">05</p>
+                </div>
+              </div>
+              <!-- task assign end  -->
+              <!-- discover start  -->
+              <div
+                class="flex gap-6 items-center col-span-2 py-5 rounded-xl px-10 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8]"
+              >
+                <img src="assets/board.png" alt="" />
+                <p class="poppins-medium text-2xl text-white">
+                  Discover Something <br />
+                  New Today!
+                </p>
+              </div>
+              <!-- discover end  -->
+              <!-- date start  -->
+              <div
+                class="flex items-center col-span-1 pl-6 gap-4 bg-[#F4F7FF] rounded-xl"
+              >
+                <div class="border-none rounded-full p-5 bg-white">
+                  <img src="assets/calender.png" alt="" />
+                </div>
+
+                <div>
+                  <p class="poppins-medium text-xl">
+                    <span class="poppins-regular">Wed</span> , <br />
+                    Jul 28 2025
+                  </p>
+                </div>
+              </div>
+              <!-- date end  -->
+            </div>
+            <!-- horizontal line start -->
+
+            <div
+              class="w-full border divide-dashed border-dashed border-[#3751fd2a]"
+            ></div>
+            <!-- horizontal line end -->
+            <!-- task assign container part end -->
+          </div>
+          <!-- dashboard end  -->
         </section>
+        <!-- dashboard container end  -->
+        <!-- activity log container start  -->
         <section class="w-3/12">
           <div class="bg-white h-60 rounded-2xl"></div>
         </section>
+        <!-- activity log container end -->
       </section>
+      <!-- main content end -->
     </main>
+    <!-- main part end -->
   </body>
 </html>
