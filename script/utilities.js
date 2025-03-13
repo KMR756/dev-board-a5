@@ -1,0 +1,1 @@
+function addTaskNumByOneNav(id, task) {}

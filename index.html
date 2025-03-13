@@ -34,7 +34,7 @@
             class="flex items-center gap-3 border-none rounded-3xl p-3 bg-[#F4F7FF]"
           >
             <img src="assets/checkbox.png" alt="" />
-            <p class="poppins-bold text-3xl">23</p>
+            <p id="nav-task-count" class="poppins-bold text-3xl">23</p>
           </div>
           <!-- check box end -->
           <!-- color pattern stat -->
@@ -70,7 +70,9 @@
 
                 <div>
                   <p class="poppins-regular text-sm">Task Assigned</p>
-                  <p class="poppins-bold text-3xl">05</p>
+                  <p class="poppins-bold text-3xl">
+                    0<span id="task-assign">6</span>
+                  </p>
                 </div>
               </div>
               <!-- task assign end  -->
@@ -124,7 +126,10 @@
                   >
                     ShopEase
                   </p>
-                  <h3 class="poppins-medium text-2xl mt-4">
+                  <h3
+                    id="dash-board-heading"
+                    class="poppins-medium text-2xl mt-4 task-heading"
+                  >
                     Fix Mobile Button Issue
                   </h3>
                   <p
@@ -149,6 +154,7 @@
                   </div>
                   <div>
                     <button
+                      id="Completed-btn"
                       class="poppins-medium text-[16px] bg-[#3752FD] text-white py-3 px-6 rounded-lg cursor-pointer"
                     >
                       Completed
@@ -164,7 +170,12 @@
                   >
                     CloudSync
                   </p>
-                  <h3 class="poppins-medium text-2xl mt-4">Add Dark Mode</h3>
+                  <h3
+                    id="dash-board-heading"
+                    class="poppins-medium text-2xl mt-4 task-heading"
+                  >
+                    Add Dark Mode
+                  </h3>
                   <p
                     class="poppins-regular text-[16px] bg-white rounded-lg mt-4 p-4 text-gray-400 h-23 overflow-hidden"
                   >
@@ -186,6 +197,7 @@
                   </div>
                   <div>
                     <button
+                      id="Completed-btn"
                       class="poppins-medium text-[16px] bg-[#3752FD] text-white py-3 px-6 rounded-lg cursor-pointer"
                     >
                       Completed
@@ -201,8 +213,11 @@
                   >
                     SwiftPay
                   </p>
-                  <h3 class="poppins-medium text-2xl mt-4">
-                    Optimize Home page 
+                  <h3
+                    id="dash-board-heading"
+                    class="poppins-medium text-2xl mt-4 task-heading"
+                  >
+                    Optimize Home page
                   </h3>
                   <p
                     class="poppins-regular text-[16px] bg-white rounded-lg mt-4 p-4 text-gray-400 h-23 overflow-hidden"
@@ -226,6 +241,7 @@
                   </div>
                   <div>
                     <button
+                      id="Completed-btn"
                       class="poppins-medium text-[16px] bg-[#3752FD] text-white py-3 px-6 rounded-lg cursor-pointer"
                     >
                       Completed
@@ -241,7 +257,12 @@
                   >
                     Meta
                   </p>
-                  <h3 class="poppins-medium text-2xl mt-4">Add new emoji 🤲</h3>
+                  <h3
+                    id="dash-board-heading"
+                    class="poppins-medium text-2xl mt-4 task-heading"
+                  >
+                    Add new emoji 🤲
+                  </h3>
                   <p
                     class="poppins-regular text-[16px] bg-white rounded-lg mt-4 p-4 text-gray-400 h-23 overflow-hidden"
                   >
@@ -264,6 +285,7 @@
                   </div>
                   <div>
                     <button
+                      id="Completed-btn"
                       class="poppins-medium text-[16px] bg-[#3752FD] text-white py-3 px-6 rounded-lg cursor-pointer"
                     >
                       Completed
@@ -279,7 +301,10 @@
                   >
                     Google LLC
                   </p>
-                  <h3 class="poppins-medium text-2xl mt-4">
+                  <h3
+                    id="dash-board-heading"
+                    class="poppins-medium text-2xl mt-4 task-heading"
+                  >
                     Integrate OpenAI API
                   </h3>
                   <p
@@ -304,6 +329,7 @@
                   </div>
                   <div>
                     <button
+                      id="Completed-btn"
                       class="poppins-medium text-[16px] bg-[#3752FD] text-white py-3 px-6 rounded-lg cursor-pointer"
                     >
                       Completed
@@ -319,7 +345,10 @@
                   >
                     Glassdoar
                   </p>
-                  <h3 class="poppins-medium text-2xl mt-4">
+                  <h3
+                    id="dash-board-heading"
+                    class="poppins-medium text-2xl mt-4"
+                  >
                     Improve Job searching
                   </h3>
                   <p
@@ -344,6 +373,7 @@
                   </div>
                   <div>
                     <button
+                      id="Completed-btn"
                       class="poppins-medium text-[16px] bg-[#3752FD] text-white py-3 px-6 rounded-lg cursor-pointer"
                     >
                       Completed
@@ -385,18 +415,7 @@
             ></div>
             <!-- horizontal line end -->
             <!-- history msg part start  -->
-            <div>
-              <div>
-                <p class="bg-[#F4F7FF] my-7 mx-5 p-4 rounded-lg">
-                  You have Complete The Task Add Dark Mode at 12:48:15 PM
-                </p>
-              </div>
-              <div>
-                <p class="bg-[#F4F7FF] my-7 mx-5 p-4 rounded-lg">
-                  You have Complete The Task Add Dark Mode at 12:48:15 PM
-                </p>
-              </div>
-            </div>
+            <div id="task-card"></div>
             <!-- history msg part start  -->
           </div>
         </section>
@@ -405,5 +424,7 @@
       <!-- main content end -->
     </main>
     <!-- main part end -->
+    <script src="script/completedTask.js"></script>
+    <script src="script/historyPart.js"></script>
   </body>
 </html>
